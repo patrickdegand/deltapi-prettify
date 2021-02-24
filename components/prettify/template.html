@@ -1,0 +1,73 @@
+<section class="mbr-section article content10" group="Article" plugins="prettify" mbr-class="{
+         'mbr-fullscreen': fullScreen}">
+
+    <mbr-parameters>
+    <!-- Block parameters controls (Blue "Gear" panel) -->
+        <input type="checkbox" title="Plein écran" name="fullScreen">
+        <input type="range" inline title="Haut" name="paddingTop" min="0" max="8" step="1" value="2">
+        <input type="range" inline title="Bas" name="paddingBottom" min="0" max="8" step="1" value="2">
+        <input type="range" inline title="Largeur du texte" name="innerWidth" min="50" max="100" step="5" value="65">
+        <input type="checkbox" title="Show Line #" name="showLineNums" checked>
+        <input type="hidden" name="showLines" value="prettyprint lang-html linenums">
+        <input type="color" title="Code color" name="codeColor" value="#f7ed4a">
+        <input type="color" title="Box color" name="boxColor" value="#000000">
+        <input type="color" title="Background color" name="bgColor" value="#c1c1c1">
+    <select title="Code language" name="codeLang">
+        <option value="lang-html" selected>HTML</option>
+        <option value="lang-js">JavaScript</option>
+        <option value="lang-xhtml">xhtml</option>
+    </select>
+    <!-- End block parameters -->
+    </mbr-parameters> 
+    <div class="container">
+        <div class="inner-container" mbr-style="{'width': innerWidth + '%'}">
+            <div class="section-text align-left mbr-fonts-style" mbr-theme-style="display-7" data-app-selector=".section-text">
+               <pre mbr-text mbr-class="[{'prettyprint': true, 'linenums': showLineNums}, codeLang]">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Demo&lt;/title&gt;
+&lt;script src="prettify.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="sunburst.css"&gt;
+&lt;style type="text/css"&gt;
+body { margin: 0; padding: 0; }
+pre { margin: 0; }
+#container { width: 40em; display: inline-block; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;!--
+&lt;body onload="PR.prettyPrint();"&gt;
+--&gt;
+&lt;body&gt;
+&lt;section&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="inner-container"&gt;
+            &lt;hr&gt;
+            &lt;div&gt;
+              &lt;pre class="prettyprint"&gt; &amp;ltdiv&amp;gtHello&amp;lt/div&amp;gt &lt;/pre&gt;
+            &lt;/div&gt;
+            &lt;hr&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;pre class="prettyprint lang-html linenums"&gt;
+&amp;lt;script type="text/javascript"&amp;gt;
+// Say hello world until the user starts questioning
+// the meaningfulness of their existence.
+function helloWorld(world) {
+  for (var i = 42; --i &amp;gt;= 0;) {
+    alert('Hello ' + String(world));
+  }
+}
+&amp;lt;/script&amp;gt;
+&lt;/pre&gt;
+&lt;script&gt;
+(function(){
+    PR.prettyPrint();
+})()
+&lt;/script&gt;
+&lt;/body&gt;
+</pre>
+           </div>
+       </div>
+   </div>
+</section>

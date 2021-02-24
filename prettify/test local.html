@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo</title>
+<script src="prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="sunburst.css">
+<style type="text/css">
+body { margin: 0; padding: 0; }
+pre { margin: 0; }
+#container { width: 40em; display: inline-block; }
+</style>
+
+</head>
+<!--
+<body onload="PR.prettyPrint();">
+-->
+<body>
+<section>
+
+    <div class="container">
+        <div class="inner-container">
+            <hr>
+            <div>
+  			<?prettify lang=html linenums=true?>          
+              <pre class="prettyprint"> &ltdiv&gtHello&lt/div&gt </pre>
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>
+<pre class="prettyprint lang-html linenums">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML Test&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+// Say hello world until the user starts questioning
+// the meaningfulness of their existence.
+function helloWorld(world) {
+  for (var i = 42; --i &gt;= 0;) {
+    alert('Hello ' + String(world));
+  }
+}
+&lt;/script&gt;
+&lt;style type="text/css"&gt;
+p { color: pink }
+b { color: blue }
+u { color: "umber" }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello world!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<script>
+(function(){
+    PR.prettyPrint();
+})()
+</script>
+</body>

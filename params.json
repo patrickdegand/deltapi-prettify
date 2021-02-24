@@ -1,0 +1,16 @@
+{
+    "title": "DeltaPi Code Prettify",
+    "description": "DeltaPi Code (HTML/JS/XHTML) prettify block  <a href=\"http://www.patrickdegand.net/index.html\">Download more...</a>",
+    "name": "deltapi-prettify",
+    "version": 1.0,
+    "minAppVersion": "4.0",
+    "components": [
+		{
+            "_group":"Article",
+            "path":"components\/prettify",
+            "_isSecondary": true
+        }
+    ],
+	"plugins": ["prettify"],
+    "logo":"deltapi.svg"
+}
